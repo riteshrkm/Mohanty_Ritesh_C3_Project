@@ -68,4 +68,12 @@ public class Restaurant {
         return name;
     }
 
+	public int calculateSelectedItems(String... Items) {
+		int sum =0;
+		for(String item:Items) {
+			sum=sum+findItemByName(item).getPrice();
+		}
+		return sum;
+	}
+
 }
