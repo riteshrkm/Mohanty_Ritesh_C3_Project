@@ -61,5 +61,10 @@ class RestaurantTest {
 					}
 				});
     }
-    //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void calculate_cost_of_selected_items_to_be_total_of_prices() {
+    	assertEquals(119+269,restaurant.calculateSelectedItems("Sweet corn soup","Vegetable lasagne"));
+    }
+  
+    
 }
